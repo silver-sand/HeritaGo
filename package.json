@@ -1,0 +1,21 @@
+{
+  "name": "heritago",
+  "version": "1.0.0",
+  "description": "HeritaGo - Navigate Culture, Discover History",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server -o",
+    "dev": "http-server -o"
+  },
+  "keywords": [
+    "heritage",
+    "culture",
+    "travel",
+    "tourism"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}
