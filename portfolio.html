@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Abhishyant Sahoo | Portfolio</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+    :root {
+      --bg: #f9fafa;
+      --text: #2c3e50;
+      --card-bg: #ffffff;
+      --primary: #0f4c81;
+    }
+
+    body.dark {
+      --bg: #121212;
+      --text: #f0f0f0;
+      --card-bg: #1e1e1e;
+    }
+
+    body {
+      font-family: 'Inter', Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: var(--bg);
+      color: var(--text);
+      transition: background 0.3s, color 0.3s;
+    }
+
+    header, section {
+      padding: 20px 30px;
+      background: var(--card-bg);
+      margin: 20px auto;
+      border-radius: 12px;
+      max-width: 900px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+      transition: background 0.3s;
+    }
+
+    header {
+      background-color: var(--primary);
+      color: #ffffff;
+      text-align: left;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    header h1 {
+      margin: 0 0 0.3rem;
+      font-size: 2.5rem;
+    }
+
+    header p {
+      margin: 0;
+      font-size: 1.2rem;
+      font-weight: 300;
+    }
+
+    .header-text {
+      flex: 1;
+    }
+
+    .header-logo img {
+      max-height: 80px;
+      margin-left: 20px;
+    }
+
+    section h2 {
+      border-left: 4px solid var(--primary);
+      padding-left: 12px;
+      font-size: 1.6rem;
+      margin-bottom: 15px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    a {
+      color: var(--primary);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    a:hover {
+      text-decoration: underline;
+      color: #093256;
+    }
+
+    .toggle-dark {
+      margin: 10px auto;
+      max-width: 900px;
+      text-align: right;
+    }
+
+    .toggle-dark button {
+      background: none;
+      border: 1px solid var(--primary);
+      padding: 5px 12px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+      color: var(--primary);
+      transition: background 0.3s, color 0.3s;
+    }
+
+    .toggle-dark button:hover {
+      background-color: var(--primary);
+      color: white;
+    }
+
+    @media (max-width: 600px) {
+      header, section {
+        margin: 10px;
+        padding: 15px 20px;
+      }
+
+      header h1 {
+        font-size: 1.8rem;
+      }
+
+      header p {
+        font-size: 1rem;
+      }
+
+      .header-logo img {
+        max-height: 60px;
+        margin-top: 10px;
+      }
+
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .toggle-dark {
+        text-align: left;
+        padding-left: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Dark Mode Toggle -->
+  <div class="toggle-dark">
+    <button onclick="document.body.classList.toggle('dark')">Toggle Dark Mode</button>
+  </div>
+
+  <!-- Header -->
+  <header>
+    <div class="header-text">
+      <h1>Abhishyant Sahoo</h1>
+      <p>Full-Stack Developer & Teen Innovator</p>
+    </div>
+    <div class="header-logo">
+      <img src="images/cbse-logo.png" alt="CBSE Logo">
+    </div>
+    <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="simple-chatbot.html">Chatbot</a></li>
+          <li><a href="odisha-monument-detector.html">Monument Detector</a></li>
+        </ul>
+      </nav>
+  </header>
+
+  <!-- About Me -->
+  <section id="about-me">
+    <h2>About Me</h2>
+    <p>
+      I'm a 16-year-old innovator passionate about building tech solutions that simplify everyday life.
+      Currently exploring full-stack development and creating real-world projects through a summer innovation camp.
+    </p>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML, CSS, JavaScript</li>
+      <li>Java (Core + Basic OOP)</li>
+      <li>Python (Projects + Scripting)</li>
+    </ul>
+  </section>
+
+  <!-- Education -->
+  <section id="education">
+    <h2>Education</h2>
+    <ul>
+      <li><strong>Grade 11 (Science Stream)</strong><br>
+        Currently pursuing – Class of 2025</li>
+    </ul>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <ul>
+      <li>
+        <h3><a href="simple-chatbot.html">Simple Chatbot</a></h3>
+        <p>A basic AI chatbot for school websites built using Python and JavaScript.</p>
+      </li>
+      <li>
+        <h3><a href="odisha-monument-detector.html">Odisha Monument Detector</a></h3>
+        <p>An AI-powered app that helps tourists discover historical monuments in Odisha.</p>
+      </li>
+      <li>
+        <h3><a href="#">HeritaGo (Coming Soon)</a></h3>
+        <p>A tourism-based app that detects nearby monuments and provides info on trains, hotels, and food spots.</p>
+      </li>
+    </ul>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:abhishyantsahoo@example.com">abhishyantsahoo@example.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/abhishyantsahoo">linkedin.com/in/abhishyantsahoo</a></p>
+    <p>GitHub: <a href="https://github.com/silver-sand">github.com/silver-sand</a></p>
+  </section>
+
+</body>
+</html>
