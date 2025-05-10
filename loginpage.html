@@ -23,6 +23,29 @@
       width: 300px;
       box-shadow: 0 0 15px rgba(0,0,0,0.5);
     }
+    .nav-links {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+    }
+
+    .nav-links ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 15px;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .nav-links a:hover {
+      text-decoration: underline;
+    }
     input {
       width: 100%;
       padding: 10px;
@@ -60,7 +83,7 @@
         <li><a href="simple-chatbot.html">Chatbot</a></li>
         <li><a href="odisha-monument-detector.html">Monument Detector</a></li>
       </ul>
-    </nav>
+  </nav>
   <div class="login-box">
     <h2>Firebase Login</h2>
     <input type="email" id="email" placeholder="Email" />
