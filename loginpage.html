@@ -113,12 +113,13 @@
       const errorMsg = document.getElementById("errorMsg");
 
       firebase.auth().signInWithEmailAndPassword(email, password)
-        .then(() => {
-          window.location.href = "index.html";
-        })
-        .catch((error) => {
-          errorMsg.textContent = error.message;
-        });
+      .then((userCredential) => {
+        // Redirect to dashboard
+        window.location.href = "dashboard.html";
+      })
+      .catch((error) => {
+        alert("Login failed: " + error.message);
+      });
     }
   </script>
 </body>
